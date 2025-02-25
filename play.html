@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Space Game</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <!-- Font Awesome 6 styles -->
+        <link href="./assets/css/fontawesome.css" rel="stylesheet" />
+        <link href="./assets/css/solid.css" rel="stylesheet" />
+
+        <link href="./styles.css" rel="stylesheet" />
+        <link href="./play.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="scroll">
+            <div class="stars"></div>
+            <div class="stars"></div>
+        </div>
+        <div class="info">
+            <div id="top-bar">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Start</a></li>
+                        <li><a href="./play.html">Play</a></li>
+                        <li><a href="./log.html">Log</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <p id="countdown">0:30</p>
+                    <p><span class="fa-solid fa-satellite satellite"></span>: <span id="satellite-count">0</span></p>
+                    <p><span class="fa-solid fa-meteor meteor"></span>: <span id="meteor-count">0</span></p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="message" id="instructions">
+                <p>Use the W - S keys or up and down arrows to collect as many satellites as you can but watch out for meteors.</p>
+                <p>You have 30 seconds.</p>
+                <button id="go" type="button">Start</button>
+            </div>
+            <div class="message" id="end">
+                <h1>GAME OVER</h1>
+                <p>You collected <span id="satellite-result"></span> satellites.</p>
+                <p>You were hit by <span id="meteor-result"></span> meteors.</p>
+                <p id="mission-result"></p>
+                <button id="to-log" type="button">Voyage Log</button>
+            </div>
+            <div id="player">
+                <span class="fa-solid fa-shuttle-space"></span>
+            </div>
+        </main>
+        <script src="main.js"></script>
+        <script src="play.js"></script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Space Game</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        
+        <link href="./styles.css" rel="stylesheet" />
+        <link href="./home.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="stars"></div>
+        <div class="info">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Start</a></li>
+                    <li><a href="./play.html">Play</a></li>
+                    <li><a href="./log.html">Log</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <form id="greeting-container" class="message">
+                <h1>Greetings, traveller</h1>
+                <p><label for="name-input"></label>>> Enter your name</label></p>
+                <div>
+                    <input id="name-input" type="text" placeholder="name">
+                    <button id="save-name">Save</button>
+                </div>
+            </form>
+        </main>
+        <script src="main.js"></script>
+        <script src="home.js"></script>
+    </body>
+</html>

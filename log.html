@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Space Game</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <!-- Font Awesome 6 styles -->
+        <link href="./assets/css/fontawesome.css" rel="stylesheet" />
+        <link href="./assets/css/solid.css" rel="stylesheet" />
+
+        <link href="./styles.css" rel="stylesheet" />
+        <link href="./log.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="stars"></div>
+        <div class="info">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Start</a></li>
+                    <li><a href="./play.html">Play</a></li>
+                    <li><a href="./log.html">Log</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="message">
+                <h1>Voyage Log</h1>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th><span class="fa-solid fa-satellite satellite"></span><span class="sr-only">Satellites</span></th>
+                                <th><span class="fa-solid fa-meteor meteor"> </span><span class="sr-only">Meteors</span></th>
+                                <th>Outcome</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scores">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+        <script src="log.js"></script>
+    </body>
+</html>

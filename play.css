@@ -1,0 +1,51 @@
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-bar > div {
+    display: flex;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+#top-bar > div > p {
+    padding: 1em;
+    line-height: 1em;
+}
+
+#scroll {
+    display: flex;
+    width: 200vw;
+    position: absolute;
+    top: 0;
+    left:0;
+    animation: scroll 5s linear infinite;
+}
+
+#end {
+    display: none;
+}
+
+#player {
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+}
+
+.flying-object {
+    display: inline-block;
+    position: absolute;
+}
+
+@keyframes scroll {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100vw;
+    }
+}

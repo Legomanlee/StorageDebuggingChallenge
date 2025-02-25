@@ -1,0 +1,40 @@
+#greeting-container > * {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+#greeting-container > p, #greeting-container > div {
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+form > div:first-of-type {
+    display: flex;
+    gap: 0.6em;
+}
+
+input {
+    border: solid 3px white;
+    border-radius: 6px;
+    padding: 0.3em;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    caret-color: white;
+}
+
+input:focus {
+    outline: solid 3px rgb(249, 34, 177);
+}
+
+input::placeholder {
+    font-style: italic;
+}

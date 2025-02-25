@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Josefin Sans",'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #00001a;
+    background: linear-gradient(0deg, rgba(0,13,85,1), rgba(2,0,36,1));
+}
+
+p {
+    line-height: 2em;
+}
+
+.stars {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.star {
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 50%;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        transform: scale(1);
+        background-color: #FFFFFF;
+    }
+    to {
+        transform: scale(0);
+        background-color: #ffda7b;
+    }
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    position: relative;
+    z-index: 1000;
+}
+
+nav li:first-of-type {
+    margin-left: 2em;
+}
+
+nav a {
+    cursor: pointer;
+    display: block;
+    padding:1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(249, 34, 177);
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.message > button {
+    padding: 0.8em;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(249, 34, 177);
+    font-size: inherit;
+    font-weight: bold;
+    padding: 0 1em;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(249, 34, 177);
+}
+
+.meteor {
+    color: rgb(249,222,7);
+    background: -webkit-linear-gradient(45deg, rgba(255,123,27,1) 0%, rgba(249,222,7,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.satellite {
+    color: rgb(203, 248, 251);
+    background: -webkit-linear-gradient(45deg, rgb(203, 248, 251) 0%, rgba(248,251,251,1) 50%, rgba(203, 248, 251) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sr-only {
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
