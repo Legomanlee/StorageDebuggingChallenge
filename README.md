@@ -10,3 +10,5 @@ The code related to storage is in:
 - log.js
 
 You may work in teams.
+
+The solutions will be posted in Lecture-Examples after class.
