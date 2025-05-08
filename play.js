@@ -246,7 +246,7 @@ document.getElementById("go").addEventListener("click", function () {
     document.getElementById("instructions").style.display = "none";
 
     // start the timer
-    setTimeout(countdown, 1000);
+    setTimeout(countdown, 3000);
     game();
 });
 
