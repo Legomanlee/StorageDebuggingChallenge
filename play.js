@@ -217,7 +217,7 @@ function game() {
 
 
 const player = document.getElementById("player");
-let timeRemaining = 30;
+let timeRemaining = 3;
 const meteors = [];
 const satellites = [];
 
@@ -261,14 +261,17 @@ document.getElementById("to-log").addEventListener("click", function () {
  */
 function saveScores() {
     let currentScores = [];
-    let player = sessionStorage.getItem("spaceGameName");
-    if (localStorage.getItem("spaceGameStorage") !== null) {
-        currentScores = localStorage.getItem("spaceGameStorage");
+    let player = "Unknown Traveller";
+    if (sessionStorage.getItem("spaceGameStorage") !== null) {
+        player = sessionStorage.getItem("spaceGameStorage");
+    }
+    if (localStorage.getItem("spaceGameStorage") !== null){
+        currentScores = JSON.parse(localStorage.getItem("spaceGameStorage"))
     }
     currentScores.push({
         player: player,
         satellites: document.getElementById("satellite-result").innerText,
         meteors: document.getElementById("meteor-result").innerText
     })
-    localStorage.setItem("spaceGameStorage", currentScores);
+    localStorage.setItem("spaceGameStorage", JSON.stringify(currentScores));
 }
