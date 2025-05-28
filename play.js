@@ -265,7 +265,7 @@ function saveScores() {
     if (sessionStorage.getItem("spaceGameStorage") !== null) {
         player = sessionStorage.getItem("spaceGameStorage");
     }
-    if (localStorage.getItem("spaceGameStorage") !== null){
+    if (localStorage.getItem("spaceGameStorage") == null){
         currentScores = JSON.parse(localStorage.getItem("spaceGameStorage"))
     }
     currentScores.push({
